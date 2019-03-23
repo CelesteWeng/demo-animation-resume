@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.token.property,
+.token.selector { color: #ccc; }
+#code { height: 100%; }
+#paper { border-left: 2px solid orange; }
+#paper > .content { padding: 16px;background-color: white; }
+.code-editor { position: fixed;left: 0;right: 0;margin: 40px auto 0;overflow: hidden;border-radius: 6px;background: none;border: 1px solid #ececec; }
+.code-editor:before { top: 0;width: 100%; }
+.code-editor span.control:before { top: 8px; }
+pre.line-numbers { top: 30px; }
+pre[class*="language-"] { padding: 16px 20px;height: 470px;background: none; }
