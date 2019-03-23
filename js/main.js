@@ -89,6 +89,34 @@ let md = `
 - QQ 673319951
 - Email 673319951@qq.com / celesteweng1115@gmail.com
 - 手机 18058110102
+
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+# 联系方式
+
 `
 
 writeCss('', css1, () => {
@@ -141,6 +169,7 @@ function writeMarkdown(cb) {
     let id = setInterval(() => {
         n += 1
         domPaper.innerHTML = md.substring(0, n)
+        domPaper.scrollTop = domPaper.scrollHeight
         if (n >= md.length) {
             window.clearInterval(id)
             cb && cb.call()
